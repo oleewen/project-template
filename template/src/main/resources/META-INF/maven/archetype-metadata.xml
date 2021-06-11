@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+                      name="only-project-archetype">
+    <requiredProperties>
+        <requiredProperty key="groupId"/>
+        <requiredProperty key="artifactId"/>
+        <requiredProperty key="package" />
+    </requiredProperties>
+
+    <fileSets>
+        <!-- api -->
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-api/src/main/java</directory>
+            <includes>
+                <include>**</include>
+                <includeEmptyDir/>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-api/src/main/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-api/src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-api/src/test/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-api</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <!-- client -->
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-client/src/main/java</directory>
+            <includes>
+                <include>**</include>
+                <includeEmptyDir/>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-client/src/main/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-client/src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-client/src/test/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-client</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <!-- domain -->
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-domain/src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-domain/src/test/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-domain/src/main/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-domain/src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-domain</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <!-- application -->
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-application/src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-application/src/test/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-application/src/main/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-application/src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-application</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <!-- resource -->
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-resource/src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-resource/src/test/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-resource/src/main/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-resource/src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-resource</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <!-- present -->
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-present/src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-present/src/test/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-present/src/main/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-present/src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-present</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory></directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="false" encoding="UTF-8" packaged="false">
+            <directory></directory>
+            <includes>
+                <include>*.sh</include>
+                <include>*.md</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+</archetype-descriptor>
