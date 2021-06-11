@@ -1,7 +1,7 @@
 package ${package}.order.present.web.controller;
 
 import ${package}.order.application.command.TradeBuyCommand;
-import ${package}.order.application.flow.TradeFlow;
+import ${package}.order.application.service.TradeApplicationService;
 import ${package}.order.application.result.TradeBuyResult;
 import ${package}.order.present.web.reponse.TradeBuyResponse;
 import ${package}.order.present.web.request.TradeBuyRequest;
@@ -24,7 +24,7 @@ public class TradeController {
 
     /** 订单流程 */
     @Resource
-    private TradeFlow tradeFlow;
+    private TradeApplicationService tradeApplicationService;
 
     @PostMapping("/buy")
     @ResponseBody
@@ -40,7 +40,7 @@ public class TradeController {
         TradeBuyCommand buyCommand = trade.asCommand();
 
         /** 交易下单 */
-        TradeBuyResult result = tradeFlow.doBuy(buyCommand);
+        TradeBuyResult result = tradeApplicationService.doBuy(buyCommand);
 
         /** 输出转换 */
         return TradeBuyResponse.valueOf(result);

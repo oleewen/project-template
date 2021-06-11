@@ -35,7 +35,7 @@
         ```
         - com.${company}.${department}.${business}.${appname}
         \- domain
-          |- handler
+          |- facade
           |- model
           |- service
           |- command
@@ -47,7 +47,7 @@
     - 代码结构如下
         ```
         - com.${company}.${department}.${business}.${appname}
-        |- flow
+        |- service
         \- action
         ```
 - resource：资源层，实现数据访问

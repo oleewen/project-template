@@ -1,4 +1,4 @@
-package ${package}.order.domain.handler;
+package ${package}.order.domain.facade;
 
 import ${package}.order.domain.model.Order;
 import org.springframework.stereotype.Component;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @date 2020-05-22
  */
 @Component
-public class OrderQueryHandler {
+public class OrderQueryFacade {
     public Order requireOrder(Long orderId) {
         return null;
     }
