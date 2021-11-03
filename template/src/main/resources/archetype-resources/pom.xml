@@ -18,8 +18,8 @@
     </properties>
 
     <modules>
-        <module>${artifactId}-present</module>
-        <module>${artifactId}-resource</module>
+        <module>${artifactId}-service</module>
+        <module>${artifactId}-infrastructure</module>
         <module>${artifactId}-application</module>
         <module>${artifactId}-domain</module>
         <module>${artifactId}-client</module>
@@ -32,12 +32,12 @@
             <!-- ======= -->
             <dependency>
                 <groupId>${groupId}</groupId>
-                <artifactId>${artifactId}-present</artifactId>
+                <artifactId>${artifactId}-service</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${groupId}</groupId>
-                <artifactId>${artifactId}-resource</artifactId>
+                <artifactId>${artifactId}-infrastructure</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
