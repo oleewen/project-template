@@ -7,7 +7,7 @@ fi
 
 APP_NAME=$1
 
-GROUP="com.company.department.business"
+GROUP="com.company.system"
 
 if [ -n "$2" ]; then
    GROUP=$2
