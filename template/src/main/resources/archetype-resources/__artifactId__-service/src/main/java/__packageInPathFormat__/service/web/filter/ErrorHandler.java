@@ -1,9 +1,9 @@
-package ${package}.service.web.filter;
+package com.company.businessdomain.order.service.web.filter;
 
+import com.company.businessdomain.common.enums.StatusCode;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-import ${package}.common.enums.StatusCode;
 import org.springframework.ext.common.exception.NestedRuntimeException;
 import org.springframework.ext.module.response.Response;
 import org.slf4j.Logger;
@@ -38,8 +38,8 @@ public class ErrorHandler {
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public Response handlerException(HttpMessageNotReadableException e) {
-        logger.error(StatusCode.HTTP_ACESS_ERROR.getErrorCode(), e);
-        Response resp = Response.create(StatusCode.HTTP_ACESS_ERROR);
+        logger.error(StatusCode.HTTP_ACCESS_ERROR.getErrorCode(), e);
+        Response resp = Response.create(StatusCode.HTTP_ACCESS_ERROR);
         return resp;
     }
 

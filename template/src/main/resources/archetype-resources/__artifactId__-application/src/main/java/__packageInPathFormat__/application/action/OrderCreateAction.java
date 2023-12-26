@@ -1,10 +1,10 @@
-package ${package}.application.action;
+package com.company.businessdomain.order.application.action;
 
-import ${package}.application.command.TradeBuyCommand;
-import ${package}.goods.domain.facade.ItemQueryFacade;
-import ${package}.goods.domain.model.Goods;
-import ${package}.order.domain.model.Order;
-import ${package}.order.domain.service.OrderDomainService;
+import com.company.businessdomain.order.application.command.OrderBuyCommand;
+import com.company.businessdomain.goods.domain.facade.ItemQueryFacade;
+import com.company.businessdomain.goods.domain.model.Goods;
+import com.company.businessdomain.order.domain.model.Order;
+import com.company.businessdomain.order.domain.service.OrderDomainService;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -24,9 +24,9 @@ public class OrderCreateAction {
     @Resource
     private OrderDomainService orderDomainService;
 
-    public Order create(TradeBuyCommand buy) {
+    public Order create(OrderBuyCommand buy) {
         /** 查询商品 */
-        Goods goods = itemQueryFacade.requireGoodsById(buy.getGoodsId());
+        Goods goods = itemQueryFacade.requireGoods(buy.getGoodsId());
 
         /** 创建订单 */
         return orderDomainService.create(buy.getBuyerId(), goods, buy.getItemCount());

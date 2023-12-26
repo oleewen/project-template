@@ -18,6 +18,7 @@
     </properties>
 
     <modules>
+        <module>${artifactId}-boot</module>
         <module>${artifactId}-service</module>
         <module>${artifactId}-infrastructure</module>
         <module>${artifactId}-application</module>

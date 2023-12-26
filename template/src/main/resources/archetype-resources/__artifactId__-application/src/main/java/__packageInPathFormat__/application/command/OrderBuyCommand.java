@@ -1,4 +1,4 @@
-package ${package}.application.command;
+package com.company.businessdomain.order.application.command;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import lombok.Data;
  * @since 2020-05-22
  */
 @Data
-public class TradeBuyCommand {
+public class OrderBuyCommand {
     /** 买家id */
     private Long buyerId;
     /** 商品id */

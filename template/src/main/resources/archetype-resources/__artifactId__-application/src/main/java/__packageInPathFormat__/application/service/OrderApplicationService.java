@@ -1,11 +1,12 @@
-package ${package}.application.service;
+package com.company.businessdomain.order.application.service;
 
-import ${package}.application.action.InventoryLockAction;
-import ${package}.application.action.OrderCreateAction;
-import ${package}.application.action.OrderEnableAction;
-import ${package}.application.command.TradeBuyCommand;
-import ${package}.application.result.TradeBuyResult;
-import ${package}.order.domain.model.Order;
+import com.company.businessdomain.order.application.action.InventoryLockAction;
+import com.company.businessdomain.order.application.action.OrderCreateAction;
+import com.company.businessdomain.order.application.action.OrderEnableAction;
+import com.company.businessdomain.order.application.command.OrderBuyCommand;
+import com.company.businessdomain.order.application.factory.OrderBuyResultFactory;
+import com.company.businessdomain.order.application.result.OrderBuyResult;
+import com.company.businessdomain.order.domain.model.Order;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -17,7 +18,7 @@ import javax.annotation.Resource;
  * @date 2020-05-22
  */
 @Component
-public class TradeAppcationService {
+public class OrderApplicationService {
     /** 库存锁定 */
     @Resource
     private InventoryLockAction inventoryLockAction;
@@ -35,7 +36,7 @@ public class TradeAppcationService {
      *
      * @return 交易创建结果
      */
-    public TradeBuyResult doBuy(TradeBuyCommand buy) {
+    public OrderBuyResult doBuy(OrderBuyCommand buy) {
         /** 创建交易订单 */
         Order order = orderCreateAction.create(buy);
 
@@ -48,7 +49,6 @@ public class TradeAppcationService {
         }
 
         // 结果封装
-        return TradeBuyResult.create(order);
+        return OrderBuyResultFactory.INSTANCE.toResult(order);
     }
 }
-

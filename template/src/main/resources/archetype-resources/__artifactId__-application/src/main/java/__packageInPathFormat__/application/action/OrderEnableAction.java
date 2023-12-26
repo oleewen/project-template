@@ -1,7 +1,7 @@
-package ${package}.application.action;
+package com.company.businessdomain.order.application.action;
 
-import ${package}.order.domain.model.Order;
-import ${package}.order.domain.service.OrderDomainService;
+import com.company.businessdomain.order.domain.model.Order;
+import com.company.businessdomain.order.domain.service.OrderDomainService;
 
 import javax.annotation.Resource;
 
