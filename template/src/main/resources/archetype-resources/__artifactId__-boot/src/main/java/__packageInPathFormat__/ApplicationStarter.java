@@ -1,4 +1,4 @@
-package com.company.businessdomain.order;
+package ${package};
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;

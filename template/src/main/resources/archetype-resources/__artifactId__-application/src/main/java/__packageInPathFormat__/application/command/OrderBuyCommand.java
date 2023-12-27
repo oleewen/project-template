@@ -1,4 +1,4 @@
-package com.company.businessdomain.order.application.command;
+package ${package}.order.application.command;
 
 import lombok.Data;
 

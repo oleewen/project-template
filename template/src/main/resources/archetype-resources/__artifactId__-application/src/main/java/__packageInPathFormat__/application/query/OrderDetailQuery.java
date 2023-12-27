@@ -1,4 +1,4 @@
-package com.company.businessdomain.order.application.query;
+package ${package}.order.application.query;
 
 public class OrderDetailQuery {
 }

@@ -1,4 +1,4 @@
-package ${package}.api.module.dto;
+package ${package}.order.api.module.dto;
 
 public class DemoDTO {
 

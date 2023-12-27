@@ -1,4 +1,4 @@
-package com.company.businessdomain.order.service.web.config;
+package ${package}.service.web.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -29,7 +29,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo()).enable(enable)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.company.system.order.web.controller"))
+                .apis(RequestHandlerSelectors.basePackage("${package}.order.web.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -1,13 +1,13 @@
-package com.company.businessdomain.order.service.rpc;
+package ${package}.order.service.rpc;
 
-import com.company.businessdomain.order.api.OrderService;
-import com.company.businessdomain.order.api.module.request.OrderBuyRequest;
-import com.company.businessdomain.order.api.module.response.OrderBuyResponse;
-import com.company.businessdomain.order.application.command.OrderBuyCommand;
-import com.company.businessdomain.order.application.result.OrderBuyResult;
-import com.company.businessdomain.order.application.service.OrderApplicationService;
-import com.company.businessdomain.order.service.factory.OrderCommandFactory;
-import com.company.businessdomain.order.service.factory.OrderResultFactory;
+import ${package}.order.api.OrderService;
+import ${package}.order.api.module.request.OrderBuyRequest;
+import ${package}.order.api.module.response.OrderBuyResponse;
+import ${package}.order.application.command.OrderBuyCommand;
+import ${package}.order.application.result.OrderBuyResult;
+import ${package}.order.application.service.OrderApplicationService;
+import ${package}.order.service.factory.OrderCommandFactory;
+import ${package}.order.service.factory.OrderResultFactory;
 import org.springframework.ext.common.aspect.Call;
 
 /**

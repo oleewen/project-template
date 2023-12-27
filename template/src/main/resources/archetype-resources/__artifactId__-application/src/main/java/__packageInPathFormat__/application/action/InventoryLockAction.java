@@ -1,7 +1,7 @@
-package com.company.businessdomain.order.application.action;
+package ${package}.order.application.action;
 
-import com.company.businessdomain.inventory.domain.service.InventoryDomainService;
-import com.company.businessdomain.order.domain.model.Order;
+import ${package}.inventory.domain.service.InventoryDomainService;
+import ${package}.order.domain.model.Order;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;

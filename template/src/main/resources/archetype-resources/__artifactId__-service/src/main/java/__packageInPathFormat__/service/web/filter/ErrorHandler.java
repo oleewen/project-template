@@ -1,4 +1,4 @@
-package com.company.businessdomain.order.service.web.filter;
+package ${package}.service.web.filter;
 
 import com.company.businessdomain.common.enums.StatusCode;
 import com.fasterxml.jackson.core.JsonParseException;

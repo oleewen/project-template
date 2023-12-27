@@ -1,4 +1,4 @@
-package ${package}.api.module.response;
+package ${package}.order.api.module.response;
 
 import org.springframework.ext.module.response.Response;
 import lombok.Data;

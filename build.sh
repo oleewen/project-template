@@ -13,7 +13,7 @@ if [ -n "$2" ]; then
    GROUP=$2
 fi
 
-PACKAGE=$GROUP.$APP_NAME
+PACKAGE=$GROUP
 
 if [ -n "$3" ]; then
    PACKAGE=$3

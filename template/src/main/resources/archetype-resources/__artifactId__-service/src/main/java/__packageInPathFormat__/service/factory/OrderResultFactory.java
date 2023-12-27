@@ -1,8 +1,8 @@
-package com.company.businessdomain.order.service.factory;
+package ${package}.order.service.factory;
 
-import com.company.businessdomain.order.api.module.dto.OrderBuyDTO;
-import com.company.businessdomain.order.api.module.response.OrderBuyResponse;
-import com.company.businessdomain.order.application.result.OrderBuyResult;
+import ${package}.order.api.module.dto.OrderBuyDTO;
+import ${package}.order.api.module.response.OrderBuyResponse;
+import ${package}.order.application.result.OrderBuyResult;
 
 public class OrderResultFactory {
     public static OrderBuyResponse asResponse(OrderBuyResult buyResult) {

@@ -1,10 +1,10 @@
-package com.company.businessdomain.order.application.action;
+package ${package}.order.application.action;
 
-import com.company.businessdomain.order.application.command.OrderBuyCommand;
-import com.company.businessdomain.goods.domain.facade.ItemQueryFacade;
-import com.company.businessdomain.goods.domain.model.Goods;
-import com.company.businessdomain.order.domain.model.Order;
-import com.company.businessdomain.order.domain.service.OrderDomainService;
+import ${package}.order.application.command.OrderBuyCommand;
+import ${package}.goods.domain.facade.ItemQueryFacade;
+import ${package}.goods.domain.model.Goods;
+import ${package}.order.domain.model.Order;
+import ${package}.order.domain.service.OrderDomainService;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;

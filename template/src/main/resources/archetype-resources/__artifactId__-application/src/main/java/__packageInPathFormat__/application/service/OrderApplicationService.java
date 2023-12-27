@@ -1,12 +1,12 @@
-package com.company.businessdomain.order.application.service;
+package ${package}.order.application.service;
 
-import com.company.businessdomain.order.application.action.InventoryLockAction;
-import com.company.businessdomain.order.application.action.OrderCreateAction;
-import com.company.businessdomain.order.application.action.OrderEnableAction;
-import com.company.businessdomain.order.application.command.OrderBuyCommand;
-import com.company.businessdomain.order.application.factory.OrderBuyResultFactory;
-import com.company.businessdomain.order.application.result.OrderBuyResult;
-import com.company.businessdomain.order.domain.model.Order;
+import ${package}.order.application.action.InventoryLockAction;
+import ${package}.order.application.action.OrderCreateAction;
+import ${package}.order.application.action.OrderEnableAction;
+import ${package}.order.application.command.OrderBuyCommand;
+import ${package}.order.application.factory.OrderBuyResultFactory;
+import ${package}.order.application.result.OrderBuyResult;
+import ${package}.order.domain.model.Order;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;

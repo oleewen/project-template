@@ -1,7 +1,7 @@
-package com.company.businessdomain.order.application.factory;
+package ${package}.order.application.factory;
 
-import com.company.businessdomain.order.application.result.OrderBuyResult;
-import com.company.businessdomain.order.domain.model.Order;
+import ${package}.order.application.result.OrderBuyResult;
+import ${package}.order.domain.model.Order;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

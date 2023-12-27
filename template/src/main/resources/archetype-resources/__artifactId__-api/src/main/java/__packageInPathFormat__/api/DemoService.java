@@ -1,4 +1,4 @@
-package ${package}.api;
+package ${package}.order.api;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

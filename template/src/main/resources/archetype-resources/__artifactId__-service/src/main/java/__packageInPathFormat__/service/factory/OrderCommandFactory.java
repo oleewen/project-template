@@ -1,7 +1,7 @@
-package com.company.businessdomain.order.service.factory;
+package ${package}.order.service.factory;
 
-import com.company.businessdomain.order.api.module.request.OrderBuyRequest;
-import com.company.businessdomain.order.application.command.OrderBuyCommand;
+import ${package}.order.api.module.request.OrderBuyRequest;
+import ${package}.order.application.command.OrderBuyCommand;
 import org.springframework.ext.common.helper.BeanHelper;
 
 public class OrderCommandFactory {

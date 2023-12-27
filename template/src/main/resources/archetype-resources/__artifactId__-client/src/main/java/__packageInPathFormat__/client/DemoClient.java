@@ -1,6 +1,6 @@
-package ${package}.client;
+package ${package}.order.client;
 
-import ${package}.api.service.DemoService;
+import ${package}.order.api.service.DemoService;
 
 public class DemoClient implements DemoService {
 }
