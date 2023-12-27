@@ -32,7 +32,7 @@ if [ $? -ne 0 ]; then
     echo "***********************************************************"
     exit 1
 fi
-cp ${artifactId}-web/target/${artifactId}-web.jar ${output}/${artifactId}-web.jar.build
+cp ${artifactId}-boot/target/${artifactId}-boot.jar ${output}/${artifactId}-boot.jar.build
 cp control.sh ${output}
 chmod 744 ${output}/control.sh
 if [ $? -ne 0 ]; then

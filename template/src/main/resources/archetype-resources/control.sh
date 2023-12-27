@@ -2,7 +2,7 @@
 
 pid=0
 JVM_ARGS=" -Xms3g -Xmx3g -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseCMSInitiatingOccupancyOnly -Xloggc:log/gc.log -XX:+PrintGCDetails"
-PACKAGE_NAME="${artifactId}-web.jar"
+PACKAGE_NAME="${artifactId}-boot.jar"
 BACK_NAME="${PACKAGE_NAME}.back"
 BUILD_NAME="${PACKAGE_NAME}.build"
 
