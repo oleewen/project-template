@@ -26,6 +26,10 @@
         <!-- ======= -->
         <!-- 二方依赖 -->
         <!-- ======= -->
+        <dependency>
+            <groupId>com.transformer</groupId>
+            <artifactId>transformer-call</artifactId>
+        </dependency>
 
         <!-- ======= -->
         <!-- 三方依赖 -->

@@ -10,7 +10,7 @@
 
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
-    <version>${version}</version>
+    <version>${revision}</version>
     <name>name</name>
     <description>description</description>
     <packaging>pom</packaging>

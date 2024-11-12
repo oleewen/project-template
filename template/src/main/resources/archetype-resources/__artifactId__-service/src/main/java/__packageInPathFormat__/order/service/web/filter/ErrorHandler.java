@@ -1,7 +1,6 @@
 package ${package}.service.web.filter;
 
 import com.transformer.exception.NestedRuntimeException;
-import com.transformer.response.Response;
 import com.transformer.response.Result;
 import com.transformer.result.ResultSupport;
 import com.transformer.status.StatusCode;

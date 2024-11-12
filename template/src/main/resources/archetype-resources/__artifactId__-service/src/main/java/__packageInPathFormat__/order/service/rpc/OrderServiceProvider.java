@@ -16,14 +16,14 @@ import com.transformer.log.annotation.Call;
  * @author only
  * @since 2020-05-22
  */
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceProvider implements OrderService {
     private OrderApplicationService orderApplicationService;
 
     @Override
     @Call(elapsed = 1200, sample = 10000)
     public OrderBuyResponse buy(OrderBuyRequest buyRequest) {
         /** 处理参数验证错误 */
-        if (buyRequest.validate()) {
+        if (buyRequest.validator()) {
             return OrderBuyResponse.empty();
         }
 

@@ -1,6 +1,9 @@
 package ${package}.order.client;
 
-import ${package}.order.api.service.DemoService;
+import ${package}.order.api.module.request.OrderBuyRequest;
+import ${package}.order.api.module.response.OrderBuyResponse;
+import ${package}.order.api.OrderService;
+import com.transformer.log.annotation.Call;
 
 public class OrderClient implements OrderService {
     @Override
