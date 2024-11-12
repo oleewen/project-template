@@ -1,4 +1,4 @@
-package ${package}.common.resource.config;
+package ${package}.common.resource;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;

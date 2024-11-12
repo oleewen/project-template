@@ -3,7 +3,8 @@
     <parent>
         <artifactId>${artifactId}</artifactId>
         <groupId>${groupId}</groupId>
-        <version>${version}</version>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -12,10 +13,6 @@
 
     <name>${artifactId}-api</name>
     <url>http://maven.apache.org</url>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
         <!-- ======= -->
@@ -26,8 +23,12 @@
         <!-- 二方依赖 -->
         <!-- ======= -->
         <dependency>
-            <groupId>org.springframework.ext</groupId>
-            <artifactId>springframework-ext-common</artifactId>
+            <groupId>com.transformer</groupId>
+            <artifactId>transformer-call</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.transformer</groupId>
+            <artifactId>transformer-common</artifactId>
         </dependency>
 
         <!-- ======= -->

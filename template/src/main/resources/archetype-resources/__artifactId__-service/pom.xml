@@ -6,16 +6,11 @@
     <parent>
         <artifactId>${artifactId}</artifactId>
         <groupId>${groupId}</groupId>
-        <version>${version}</version>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>${artifactId}-service</artifactId>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
         <!-- ======= -->
@@ -33,6 +28,10 @@
         <!-- ======= -->
         <!-- 二方依赖 -->
         <!-- ======= -->
+        <dependency>
+            <groupId>com.transformer</groupId>
+            <artifactId>transformer-common</artifactId>
+        </dependency>
 
         <!-- ======= -->
         <!-- 三方依赖 -->

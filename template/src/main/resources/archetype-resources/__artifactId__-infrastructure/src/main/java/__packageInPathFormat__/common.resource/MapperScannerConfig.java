@@ -1,4 +1,4 @@
-package ${package}.common.resource.config;
+package ${package}.common.resource;
 
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;

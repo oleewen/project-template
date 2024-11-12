@@ -3,7 +3,8 @@
     <parent>
         <artifactId>${artifactId}</artifactId>
         <groupId>${groupId}</groupId>
-        <version>${version}</version>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -26,22 +27,10 @@
         <!-- ======= -->
         <!-- 二方依赖 -->
         <!-- ======= -->
-        <dependency>
-            <groupId>org.springframework.ext</groupId>
-            <artifactId>springframework-ext-biz</artifactId>
-        </dependency>
 
         <!-- ======= -->
         <!-- 三方依赖 -->
         <!-- ======= -->
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>retrofit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>converter-jackson</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
@@ -49,6 +38,10 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
         </dependency>
 
         <!-- ======= -->

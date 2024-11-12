@@ -4,7 +4,7 @@ import ${package}.order.domain.model.Order;
 import ${package}.order.domain.model.OrderId;
 import ${package}.order.domain.repository.OrderRepository;
 import ${package}.order.infrastructure.entity.OrderEntity;
-import org.springframework.ext.common.aspect.Call;
+import com.transformer.log.annotation.Call;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;

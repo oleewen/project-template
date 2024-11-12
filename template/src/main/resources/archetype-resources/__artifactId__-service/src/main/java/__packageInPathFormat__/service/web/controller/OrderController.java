@@ -7,7 +7,7 @@ import ${package}.order.application.result.OrderBuyResult;
 import ${package}.order.application.service.OrderApplicationService;
 import ${package}.order.service.factory.OrderCommandFactory;
 import ${package}.order.service.factory.OrderResultFactory;
-import org.springframework.ext.common.aspect.Call;
+import com.transformer.log.annotation.Call;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 

@@ -5,7 +5,7 @@ import ${package}.goods.domain.repository.GoodsRepository;
 import ${package}.goods.infrastructure.call.GoodsCall;
 import ${package}.goods.infrastructure.entity.GoodsEntity;
 import ${package}.goods.infrastructure.factory.GoodsFactory;
-import org.springframework.ext.common.aspect.Call;
+import com.transformer.log.annotation.Call;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;

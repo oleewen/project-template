@@ -1,4 +1,4 @@
-package ${package};
+package ${package}.boot;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
