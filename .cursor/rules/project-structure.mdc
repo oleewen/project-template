@@ -1,0 +1,54 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# 项目结构说明
+
+## 模块说明
+项目采用DDD分层架构，包含以下模块：
+
+1. [__artifactId__-api](mdc:project-template/template/src/main/resources/archetype-resources/__artifactId__-api/pom.xml)
+   - 对外接口层
+   - 包含DTO、请求和响应对象
+   - 定义对外暴露的接口
+
+2. [__artifactId__-application](mdc:project-template/template/src/main/resources/archetype-resources/__artifactId__-application/pom.xml)
+   - 应用层
+   - 包含命令、查询和服务
+   - 编排领域对象
+
+3. [__artifactId__-domain](mdc:project-template/template/src/main/resources/archetype-resources/__artifactId__-domain/pom.xml)
+   - 领域层
+   - 包含领域模型、仓储接口和领域服务
+   - 实现核心业务逻辑
+
+4. [__artifactId__-infrastructure](mdc:project-template/template/src/main/resources/archetype-resources/__artifactId__-infrastructure/pom.xml)
+   - 基础设施层
+   - 包含数据访问、消息队列、缓存等
+   - 实现技术细节
+
+5. [__artifactId__-service](mdc:project-template/template/src/main/resources/archetype-resources/__artifactId__-service/pom.xml)
+   - 服务层
+   - 包含RPC服务和Web接口
+   - 处理外部请求
+
+6. [__artifactId__-common](mdc:project-template/template/src/main/resources/archetype-resources/__artifactId__-common/pom.xml)
+   - 公共模块
+   - 包含通用工具类和常量
+   - 供其他模块使用
+
+7. [__artifactId__-client](mdc:project-template/template/src/main/resources/archetype-resources/__artifactId__-client/pom.xml)
+   - 客户端模块
+   - 提供调用当前服务的客户端
+
+8. [__artifactId__-boot](mdc:project-template/template/src/main/resources/archetype-resources/__artifactId__-boot/pom.xml)
+   - 启动模块
+   - 包含应用配置和启动类
+
+## 目录结构
+每个模块都遵循标准的Maven目录结构：
+- src/main/java：Java源代码
+- src/main/resources：配置文件
+- src/test/java：测试代码
+- src/test/resources：测试配置

@@ -1,0 +1,91 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 依赖管理规则
+
+## 技术栈版本
+
+### 1. 基础框架
+- Java Version: 17
+- Spring Boot: 2.7.10
+- Maven: 3.7.0+
+
+### 2. 内部依赖
+- Transformer Components: 1.2.10
+  - transformer-common
+  - transformer-util
+  - transformer-dubbo
+  - transformer-dao
+  - transformer-call
+
+### 3. 数据访问
+- MyBatis Spring Boot Starter: 2.3.2
+- Druid: 1.2.23
+
+### 4. 工具库
+- Lombok
+- SLF4J
+- Swagger: 2.7.0
+
+## 依赖管理规范
+
+### 1. 版本管理
+- 在父POM中统一管理版本
+- 使用properties定义版本号
+- 子模块不允许覆盖版本
+- 定期检查和更新依赖版本
+
+### 2. 模块依赖关系
+```
+client ─► api ─► common
+                  ▲
+                  │
+                  ├─────► domain ◄─── application
+                  │         ▲
+                  │         │
+                  └─► infrastructure
+```
+
+### 3. 依赖原则
+- 遵循单一职责原则
+- 避免循环依赖
+- 最小化依赖范围
+- 显式声明所有依赖
+
+### 4. 依赖范围
+- compile：默认范围
+- provided：容器提供
+- runtime：运行时需要
+- test：测试时需要
+
+### 5. 可选依赖
+- 谨慎使用optional
+- 文档说明使用场景
+- 提供默认实现
+
+### 6. 排除依赖
+- 解决版本冲突
+- 避免重复依赖
+- 控制依赖传递
+
+## 依赖审查
+
+### 1. 定期检查
+- 检查版本更新
+- 评估安全漏洞
+- 测试兼容性
+- 更新文档
+
+### 2. 新增依赖
+- 评估必要性
+- 检查许可证
+- 验证稳定性
+- 考虑维护成本
+
+### 3. 依赖清理
+- 移除未使用依赖
+- 合并相似依赖
+- 统一版本管理
+- 优化依赖树
