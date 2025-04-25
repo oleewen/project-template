@@ -10,6 +10,39 @@
     </requiredProperties>
 
     <fileSets>
+        <!-- common -->
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-common/src/main/java</directory>
+            <includes>
+                <include>**</include>
+                <includeEmptyDir/>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-common/src/main/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-common/src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-common/src/test/resources</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+            <directory>__artifactId__-common</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
         <!-- api -->
         <fileSet filtered="true" encoding="UTF-8" packaged="false">
             <directory>__artifactId__-api/src/main/java</directory>

@@ -30,7 +30,7 @@
         <!-- ======= -->
         <dependency>
             <groupId>com.transformer</groupId>
-            <artifactId>transformer-common</artifactId>
+            <artifactId>transformer-dubbo</artifactId>
         </dependency>
 
         <!-- ======= -->

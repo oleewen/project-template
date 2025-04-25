@@ -11,10 +11,6 @@
     <artifactId>${artifactId}-application</artifactId>
     <packaging>jar</packaging>
 
-    <name>${artifactId}-application</name>
-    <url>http://maven.apache.org</url>
-
-
     <dependencies>
         <!-- ======= -->
         <!-- 模块依赖 -->

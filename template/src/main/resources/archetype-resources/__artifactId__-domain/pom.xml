@@ -11,14 +11,15 @@
     <artifactId>${artifactId}-domain</artifactId>
     <packaging>jar</packaging>
 
-    <name>${artifactId}-domain</name>
-    <url>http://maven.apache.org</url>
-
     <dependencies>
         <!-- ======= -->
         <!-- 二方依赖 -->
         <!-- ======= -->
-        
+        <dependency>
+            <groupId>${groupId}</groupId>
+            <artifactId>${artifactId}-common</artifactId>
+        </dependency>
+
         <!-- ======= -->
         <!-- 三方依赖 -->
         <!-- ======= -->
@@ -31,10 +32,6 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.annotation</groupId>

@@ -1,57 +1,43 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>${artifactId}</artifactId>
         <groupId>${groupId}</groupId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>${artifactId}-api</artifactId>
+    <artifactId>${artifactId}-common</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
         <!-- ======= -->
         <!-- 模块依赖 -->
         <!-- ======= -->
-        <dependency>
-            <groupId>${groupId}</groupId>
-            <artifactId>${artifactId}-common</artifactId>
-        </dependency>
+
 
         <!-- ======= -->
         <!-- 二方依赖 -->
         <!-- ======= -->
         <dependency>
             <groupId>com.transformer</groupId>
-            <artifactId>transformer-call</artifactId>
+            <artifactId>transformer-common</artifactId>
         </dependency>
         <dependency>
             <groupId>com.transformer</groupId>
-            <artifactId>transformer-common</artifactId>
+            <artifactId>transformer-util</artifactId>
         </dependency>
 
         <!-- ======= -->
         <!-- 三方依赖 -->
         <!-- ======= -->
-        <!-- json -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
         <!-- effective -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-annotations</artifactId>
         </dependency>
 
         <!-- ======= -->
