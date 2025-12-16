@@ -1,4 +1,4 @@
-package ${package}.service.web.config;
+package ${package}.order.service.web.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
